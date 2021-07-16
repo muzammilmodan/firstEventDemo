@@ -15,4 +15,5 @@
     <color name="hint_color">#696969</color>
 
     <color name="view_line">#EFF2F7</color>
+    <color name="text_hint">#71757A</color>
 </resources>

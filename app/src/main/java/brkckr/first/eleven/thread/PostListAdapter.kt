@@ -167,6 +167,7 @@ class PostListAdapter(
             holder.ivPostMainPicRPLD.visibility = View.GONE
             holder.viewLine.visibility = View.VISIBLE
             holder.cnstMain.visibility = View.VISIBLE
+            holder.viewLineBottom.visibility = View.GONE
 
             if (alFollowList.size > (position + 1)) {
                 if (alFollowList[position].postUserId != alFollowList[position + 1].postUserId) {
@@ -206,6 +207,7 @@ class PostListAdapter(
                     holder.tvShowReplies.visibility = View.GONE
                     holder.tvPostDesRPLD.visibility = View.VISIBLE
                     holder.viewLine.visibility = View.GONE
+                    holder.viewLineBottom.visibility = View.GONE
                     holder.ivPostMainPicRPLD.visibility = View.GONE
 
                     Log.e("Show Replies Visible 3", "-----===> ")
@@ -240,7 +242,6 @@ class PostListAdapter(
         var viewLineBottom = view.findViewById<View>(R.id.viewLineBottom) as View
 
         var tvShowReplies = view.findViewById<TextView>(R.id.tvShowReplies) as TextView
-        var rlPostDetails = view.findViewById<RelativeLayout>(R.id.rlPostDetails) as RelativeLayout
 
         var cnstMain = view.findViewById<ConstraintLayout>(R.id.cnstMain) as ConstraintLayout
     }

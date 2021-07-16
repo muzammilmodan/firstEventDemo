@@ -14,11 +14,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4df2658d-a45b-47d0-8408-2e4811ba3c74" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/dotted_bg_vw.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_comment_slct.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_like_slct.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_retweet_slct.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_upload_slct.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/brkckr/first/eleven/thread/PostListAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/brkckr/first/eleven/thread/PostListAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/brkckr/first/eleven/thread/ThreadTimeLineActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/brkckr/first/eleven/thread/ThreadTimeLineActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_thread_time_line.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_thread_time_line.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_post_list_data.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/row_post_list_data.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,11 +48,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="resourceFile" />
         <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
         <option value="layoutResourceFile" />
         <option value="Class" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -62,7 +76,8 @@
     <property name="android-custom-viewC:/Users/Intelivita Android 2/.gradle/caches/modules-2/files-2.1/com.mindorks/placeholderview/0.7.1/caf1c56c36b8af7bad9db6dc432969c07a8394e7/placeholderview-0.7.1-sources.jar!/com/mindorks/placeholderview/ExpandablePlaceHolderView.java_SELECTED" value="ExpandablePlaceHolderView" />
     <property name="android-custom-viewD:/FlutterWorkSpace/Muzammil/Demos/FirstEleven/app/src/main/java/brkckr/first/eleven/Field.java_SELECTED" value="Field" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="multi-representation-previewD:/FlutterWorkSpace/Muzammil/Demos/FirstEleven/app/src/main/java/brkckr/first/eleven/Field.java_selected" value="Custom views" />
     <property name="project.structure.last.edited" value="SDK Location" />
     <property name="project.structure.proportion" value="0.17" />
@@ -198,10 +213,10 @@
     </state>
     <state x="765" y="216" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1625130695732" />
     <state x="765" y="216" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1626350114333" />
-    <state x="540" y="265" key="AndroidCreateResourceFileDialog" timestamp="1626347988603">
+    <state x="540" y="265" key="AndroidCreateResourceFileDialog" timestamp="1626430790660">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="540" y="265" key="AndroidCreateResourceFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1626347988603" />
+    <state x="540" y="265" key="AndroidCreateResourceFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1626430790660" />
     <state x="758" y="256" key="AndroidProcessChooserDialog" timestamp="1626429125032">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -245,6 +260,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1625221379240" />
+    <state x="776" y="288" key="chooseDestDirectoryDialog" timestamp="1626431259384">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="776" y="288" key="chooseDestDirectoryDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1626431259384" />
     <state x="442" y="239" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1626346102614">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -333,7 +352,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/brkckr/first/eleven/thread/PostListAdapter.kt</url>
-          <line>218</line>
+          <line>203</line>
           <option name="timeStamp" value="118" />
         </line-breakpoint>
       </breakpoints>
