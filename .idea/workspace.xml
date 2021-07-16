@@ -15,9 +15,10 @@
   <component name="ChangeListManager">
     <list default="true" id="4df2658d-a45b-47d0-8408-2e4811ba3c74" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/FirstEleven.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/FirstEleven.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/brkckr/first/eleven/thread/PostListAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/brkckr/first/eleven/thread/PostListAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/brkckr/first/eleven/thread/ThreadTimeLineActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/brkckr/first/eleven/thread/ThreadTimeLineActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_thread_time_line.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_thread_time_line.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,41 +202,41 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="540" y="265" key="AndroidCreateResourceFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1626347988603" />
-    <state x="758" y="256" key="AndroidProcessChooserDialog" timestamp="1626419061588">
+    <state x="758" y="256" key="AndroidProcessChooserDialog" timestamp="1626429125032">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="758" y="256" key="AndroidProcessChooserDialog/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1625221475693" />
-    <state x="758" y="256" key="AndroidProcessChooserDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1626419061588" />
-    <state width="1537" height="729" key="DebuggerActiveHint" timestamp="1626419158173">
+    <state x="758" y="256" key="AndroidProcessChooserDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1626429125032" />
+    <state width="1537" height="729" key="DebuggerActiveHint" timestamp="1626429186504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1090" height="729" key="DebuggerActiveHint/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1625221688641" />
-    <state width="1537" height="729" key="DebuggerActiveHint/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1626419158173" />
+    <state width="1537" height="729" key="DebuggerActiveHint/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1626429186504" />
     <state x="740" y="264" key="FileChooserDialogImpl" timestamp="1626329018541">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="264" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1625208362292" />
     <state x="740" y="264" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1626329018541" />
-    <state width="1860" height="76" key="GridCell.Tab.0.bottom" timestamp="1626419375052">
+    <state width="1860" height="372" key="GridCell.Tab.0.bottom" timestamp="1626429358791">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1860" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1625224242239" />
-    <state width="1860" height="76" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1626419375052" />
-    <state width="1860" height="76" key="GridCell.Tab.0.center" timestamp="1626419375052">
+    <state width="1860" height="372" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1626429358791" />
+    <state width="1860" height="372" key="GridCell.Tab.0.center" timestamp="1626429358791">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1860" height="257" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1625224242239" />
-    <state width="1860" height="76" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1626419375052" />
-    <state width="1860" height="76" key="GridCell.Tab.0.left" timestamp="1626419375052">
+    <state width="1860" height="372" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1626429358791" />
+    <state width="1860" height="372" key="GridCell.Tab.0.left" timestamp="1626429358791">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1860" height="257" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1625224242239" />
-    <state width="1860" height="76" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1626419375052" />
-    <state width="1860" height="76" key="GridCell.Tab.0.right" timestamp="1626419375052">
+    <state width="1860" height="372" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1626429358791" />
+    <state width="1860" height="372" key="GridCell.Tab.0.right" timestamp="1626429358791">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1860" height="257" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1625224242239" />
-    <state width="1860" height="76" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1626419375052" />
+    <state width="1860" height="372" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1626429358791" />
     <state x="461" y="155" key="SettingsEditor" timestamp="1626414741694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -332,23 +333,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/brkckr/first/eleven/thread/PostListAdapter.kt</url>
-          <line>187</line>
-          <option name="timeStamp" value="108" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/brkckr/first/eleven/thread/PostListAdapter.kt</url>
-          <line>179</line>
-          <option name="timeStamp" value="111" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/brkckr/first/eleven/thread/PostListAdapter.kt</url>
-          <line>181</line>
-          <option name="timeStamp" value="112" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/brkckr/first/eleven/thread/PostListAdapter.kt</url>
-          <line>46</line>
-          <option name="timeStamp" value="115" />
+          <line>218</line>
+          <option name="timeStamp" value="118" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

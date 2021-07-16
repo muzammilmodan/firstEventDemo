@@ -6,15 +6,16 @@
     tools:context=".thread.ThreadTimeLineActivity">
 
     <RelativeLayout
-        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
         android:id="@+id/rlHeaderMain"
         android:layout_width="match_parent"
-        android:layout_height="30dp">
+        android:layout_height="50dp">
 
         <ImageView
+            android:layout_marginTop="5dp"
             android:onClick="OPenExpanView"
             android:layout_width="35dp"
-            android:layout_height="match_parent"
+            android:layout_height="40dp"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="20dp"
             android:background="@mipmap/ic_launcher" />
@@ -59,6 +60,8 @@
             android:textSize="16dp" />
 
     </RelativeLayout>
+
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcVwThreadATTL"

@@ -99,127 +99,130 @@ class ThreadTimeLineActivity : AppCompatActivity() {
         alPostList = ArrayList()
         var addFav = PostResponse(0, 15, "Jhon", "@casper123", "2 day ago", R.drawable.profile_dmy,
                 "Lyon have won a record-extending seventh Women's Champions\n" +
-                        "League title, beating Wolfsburg 3-1", R.drawable.profile_dmy, 0, "", 51, 4, 80, true, false, false)
+                        "League title, beating Wolfsburg 3-1", R.drawable.profile_dmy,
+                0, "", 51, 4, 80, isLikePost = true, isCommentPost = false, isRetweetPost = false)
         alPostList.add(addFav)
 
-        addFav = PostResponse(1, 25, "Batida cart", "@casper123", "2 day ago", R.drawable.profile_dmy, "Who impressed you, ", R.drawable.profile_dmy, 1, "", 5, 4, 8, false, true, false)
+        addFav = PostResponse(1, 25, "Batida cart", "@casper123", "2 day ago", R.drawable.profile_dmy_1,
+                "First: Who impressed you, ", R.drawable.profile_dmy, 1, "", 5, 4, 8, isLikePost = false, isCommentPost = true, isRetweetPost = false)
         alPostList.add(addFav)
 
-        addFav = PostResponse(2, 25, "Batida cart", "@casper123", "2 day ago", R.drawable.profile_dmy,
+        addFav = PostResponse(2, 25, "Batida cart", "@casper123", "2 day ago", R.drawable.profile_dmy_1,
+                "Second: Real Salt Lake owner Dell Loy Hansen will sell his soccer teams in the wake of reports that " +
+                        "he made racist comments.", R.drawable.profile_dmy, 2, "", 5, 4, 8, isLikePost = false, isCommentPost = false, isRetweetPost = true)
+        alPostList.add(addFav)
+
+        addFav = PostResponse(2, 125, "Geter men", "@casper123", "2 day ago", R.drawable.profile_dmy_4,
                 "Real Salt Lake owner Dell Loy Hansen will sell his soccer teams in the wake of reports that " +
-                        "he made racist comments.", R.drawable.profile_dmy, 2, "", 5, 4, 8, false, false, true)
-        alPostList.add(addFav)
-
-        addFav = PostResponse(2, 125, "Geter men", "@casper123", "2 day ago", R.drawable.profile_dmy,
-                "Real Salt Lake owner Dell Loy Hansen will sell his soccer teams in the wake of reports that " +
-                        "he made racist comments.", R.drawable.profile_dmy, 2, "", 5, 4, 8, false, false, true)
+                        "he made racist comments.", R.drawable.profile_dmy, 2, "", 5, 4, 8, isLikePost = false, isCommentPost = false, isRetweetPost = true)
         alPostList.add(addFav)
 
         addFav = PostResponse(3, 45, "elon musk", "@casper123", "2 day ago",
-                R.drawable.profile_dmy, "Lyon have won.sfsdf",
+                R.drawable.profile_dmy_2, "First: Lyon have won.sfsdf",
                 R.drawable.profile_dmy, 3, "", 5, 4,
-                2, false, false, false, "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
+                2, isLikePost = false, isCommentPost = false, isRetweetPost = false, postVideoUrl = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
         alPostList.add(addFav)
         addFav = PostResponse(3, 45, "elon musk", "@casper123", "2 day ago",
-                R.drawable.profile_dmy, "Lyon have won.",
+                R.drawable.profile_dmy_2, "Second: Lyon have won.",
                 R.drawable.profile_dmy, 3, "", 5, 4,
-                2, false, false, false, "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
+                2, isLikePost = false, isCommentPost = false, isRetweetPost = false, postVideoUrl = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
         alPostList.add(addFav)
 
         addFav = PostResponse(3, 45, "elon musk", "@casper123", "2 day ago",
-                R.drawable.profile_dmy, "Lyon have won.sfsdfLyon have won.sfsdfLyon have won.sfsdfLyon have won.sfsdfLyon have won.sfsdfLyon have won.sfsdfLyon have won.sfsdf",
+                R.drawable.profile_dmy_2, "Third: Lyon have won.sfsdfLyon have won.sfsdfLyon have won.sfsdfLyon have won.sfsdfLyon have won.sfsdfLyon have won.sfsdfLyon have won.sfsdf",
                 R.drawable.profile_dmy, 3, "", 5, 4,
-                2, false, false, false, "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
+                2, isLikePost = false, isCommentPost = false, isRetweetPost = false, postVideoUrl = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
         alPostList.add(addFav)
         addFav = PostResponse(3, 45, "elon musk", "@casper123", "2 day ago",
-                R.drawable.profile_dmy, "Lyon have won.",
+                R.drawable.profile_dmy_2, "Forth: Lyon have won.",
                 R.drawable.profile_dmy, 3, "", 5, 4,
-                2, false, false, false, "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
+                2, isLikePost = false, isCommentPost = false, isRetweetPost = false, postVideoUrl = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
         alPostList.add(addFav)
 
         addFav = PostResponse(3, 45, "elon musk", "@casper123", "2 day ago",
-                R.drawable.profile_dmy, "Lyon have won.sfsdf",
+                R.drawable.profile_dmy_2, "Five: Lyon have won.sfsdf",
                 R.drawable.profile_dmy, 3, "", 5, 4,
-                2, false, false, false, "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
+                2, isLikePost = false, isCommentPost = false, isRetweetPost = false, postVideoUrl = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
         alPostList.add(addFav)
         addFav = PostResponse(3, 45, "elon musk", "@casper123", "2 day ago",
-                R.drawable.profile_dmy, "Lyon have won.",
+                R.drawable.profile_dmy_2, "Six: Lyon have won.",
                 R.drawable.profile_dmy, 3, "", 5, 4,
-                2, false, false, false, "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
+                2, isLikePost = false, isCommentPost = false, isRetweetPost = false, postVideoUrl = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
         alPostList.add(addFav)
 
-        addFav = PostResponse(3, 155, "elon best", "@casper123", "2 day ago",
+        addFav = PostResponse(3, 155, "Jhon cena", "@casper123", "2 day ago",
                 R.drawable.profile_dmy, "Lyon have won second.",
                 R.drawable.profile_dmy, 3, "", 5, 4,
-                2, false, false, false, "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
+                2, isLikePost = false, isCommentPost = false, isRetweetPost = false, postVideoUrl = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
         alPostList.add(addFav)
 
         addFav = PostResponse(4, 35, "SRK", "@casper123", "2 day ago",
-                R.drawable.profile_dmy, "Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions",
+                R.drawable.srk, "First: Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions",
                 R.drawable.profile_dmy, 3, "", 5, 4,
-                2, false, false, false, "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
+                2, isLikePost = false, isCommentPost = false, isRetweetPost = false, postVideoUrl = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
         alPostList.add(addFav)
 
         addFav = PostResponse(5, 35, "SRK", "@casper123", "2 day ago",
-                R.drawable.profile_dmy, "Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions",
+                R.drawable.srk, "Second: Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions",
                 R.drawable.profile_dmy, 3, "", 5, 4,
-                2, false, false, false, "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
+                2, isLikePost = false, isCommentPost = false, isRetweetPost = false, postVideoUrl = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
         alPostList.add(addFav)
 
 
         addFav = PostResponse(6, 35, "SRK", "@casper123", "2 day ago",
-                R.drawable.profile_dmy, "Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions",
+                R.drawable.srk, "Third: Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions",
                 R.drawable.profile_dmy, 3, "", 5, 4,
-                2, false, false, false, "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
+                2, isLikePost = false, isCommentPost = false, isRetweetPost = false, postVideoUrl = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
         alPostList.add(addFav)
 
         addFav = PostResponse(7, 25, "Batida cart", "@casper123", "2 day ago",
                 R.drawable.profile_dmy, "Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions",
                 R.drawable.profile_dmy, 3, "", 5, 4,
-                2, false, false, false, "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
+                2, isLikePost = false, isCommentPost = false, isRetweetPost = false, postVideoUrl = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
         alPostList.add(addFav)
 
         addFav = PostResponse(8, 35, "SRK", "@casper123", "2 day ago",
-                R.drawable.profile_dmy, "Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions",
-                R.drawable.profile_dmy, 3, "", 5, 4,
-                2, false, false, false, "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
+                R.drawable.srk, "Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions",
+                R.drawable.srk, 3, "", 5, 4,
+                2, isLikePost = false, isCommentPost = false, isRetweetPost = false, postVideoUrl = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
         alPostList.add(addFav)
 
         addFav = PostResponse(9, 10, "BigB", "@casper123", "2 day ago",
-                R.drawable.profile_dmy, "Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions",
+                R.drawable.profile_dmy_5, "First: Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions",
                 R.drawable.profile_dmy, 3, "", 5, 4,
-                2, false, false, false, "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
+                2, isLikePost = false, isCommentPost = false, isRetweetPost = false, postVideoUrl = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
         alPostList.add(addFav)
 
         addFav = PostResponse(10, 10, "BigB", "@casper123", "2 day ago",
-                R.drawable.profile_dmy, "Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions",
+                R.drawable.profile_dmy_5, "Second: Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions",
                 R.drawable.profile_dmy, 3, "", 5, 4,
-                2, false, false, false, "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
+                2, isLikePost = false, isCommentPost = false, isRetweetPost = false, postVideoUrl = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
         alPostList.add(addFav)
 
         addFav = PostResponse(11, 10, "BigB", "@casper123", "2 day ago",
-                R.drawable.profile_dmy, "This is second, Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions",
+                R.drawable.profile_dmy_5, "Third: This is second, Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions",
                 R.drawable.profile_dmy, 3, "", 5, 4,
-                2, false, false, false, "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
+                2, isLikePost = false, isCommentPost = false, isRetweetPost = false, postVideoUrl = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
         alPostList.add(addFav)
 
 
         addFav = PostResponse(12, 10, "BigB", "@casper123", "2 day ago",
-                R.drawable.profile_dmy, "This is third, Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions",
+                R.drawable.profile_dmy_5, "Forth: This is third, Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions",
                 R.drawable.profile_dmy, 3, "", 5, 4,
-                2, false, false, false, "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
+                2, isLikePost = false, isCommentPost = false, isRetweetPost = false, postVideoUrl = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
         alPostList.add(addFav)
 
         addFav = PostResponse(12, 10, "BigB", "@casper123", "2 day ago",
-                R.drawable.profile_dmy, "This is third, Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions",
+                R.drawable.profile_dmy_5, "Five: This is third, Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions",
                 R.drawable.profile_dmy, 3, "", 5, 4,
-                2, false, false, false, "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
+                2, isLikePost = false, isCommentPost = false, isRetweetPost = false, postVideoUrl = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
         alPostList.add(addFav)
 
         addFav = PostResponse(12, 10, "BigB", "@casper123", "2 day ago",
-                R.drawable.profile_dmy, "This is third, Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions",
+                R.drawable.profile_dmy_5, "Six: This is third, Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions Lyon have won a record-extending seventh Women's Champions",
                 R.drawable.profile_dmy, 3, "", 5, 4,
-                2, false, false, false, "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
+                2, isLikePost = false, isCommentPost = false, isRetweetPost = false,
+                postVideoUrl = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
         alPostList.add(addFav)
 
         for (movie in alPostList) {

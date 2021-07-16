@@ -46,7 +46,8 @@ class PostListAdapter(
 
         holder.tvUserNameRPLD.text = itemList.name
         holder.tvPostDesRPLD.text = itemList.postDetails
-        holder.ivProfilePicRPLD.setImageDrawable(context.resources.getDrawable(R.drawable.profile_dmy))
+
+        holder.ivProfilePicRPLD.setImageResource(itemList.profilePic)
         holder.ivProfilePicRPLD.shapeAppearanceModel =
                 holder.ivProfilePicRPLD.shapeAppearanceModel
                         .toBuilder()
@@ -55,10 +56,6 @@ class PostListAdapter(
                         .setBottomLeftCorner(CornerFamily.ROUNDED, 35f)
                         .setBottomRightCorner(CornerFamily.ROUNDED, 35f)
                         .build()
-
-
-        Log.e("lastUserID", "====> " + lastUserID)
-        Log.e("follow id", "====> " + alFollowList[position].postUserId)
 
         if (itemList.postType == 0) {
             holder.ivPostMainPicRPLD.visibility = View.VISIBLE
@@ -76,15 +73,13 @@ class PostListAdapter(
                     holder.viewLineBottom.visibility = View.GONE
                     alFollowList[position].lastViewVisible = true
 
-                    var checkPosiition = position - 1
-                    if (alFollowList[checkPosiition].lastViewVisible) {
+                    var checkPosition = position - 1
+                    if (alFollowList[checkPosition].lastViewVisible) {
                         if (alFollowList[position].postUserId == alFollowList[position - 1].postUserId) {
 
                             holder.tvShowReplies.visibility = View.VISIBLE
                             holder.tvPostDesRPLD.visibility = View.GONE
                             holder.ivPostMainPicRPLD.visibility = View.GONE
-
-                            Log.e("Show Replies Visible 1", "-----===> ")
 
                             if (alFollowList.size > (position + 2)) {
                                 if (alFollowList[position].lastViewVisible
@@ -98,7 +93,6 @@ class PostListAdapter(
                             } else if (alFollowList.size > (position + 1)) {
                                 holder.viewLine.visibility = View.GONE
                                 holder.viewLineBottom.visibility = View.VISIBLE
-                                // holder.cnstMain.visibility = View.GONE
                             }
 
                         } else {
@@ -123,9 +117,6 @@ class PostListAdapter(
                         holder.tvShowReplies.visibility = View.VISIBLE
                         holder.tvPostDesRPLD.visibility = View.GONE
                         holder.ivPostMainPicRPLD.visibility = View.GONE
-
-                        Log.e("Show Replies Visible 2", "-----===> ")
-                        // holder.cnstMain.visibility=View.GONE
 
                         if (alFollowList.size > (position + 2)) {
                             if (alFollowList[position].lastViewVisible
@@ -170,8 +161,21 @@ class PostListAdapter(
                     holder.tvPostDesRPLD.visibility = View.VISIBLE
                 }
             }
-        }else{
-            Toast.makeText(context,"After Clicked OPen",Toast.LENGTH_SHORT).show()
+        } else {
+            holder.tvShowReplies.visibility = View.GONE
+            holder.tvPostDesRPLD.visibility = View.VISIBLE
+            holder.ivPostMainPicRPLD.visibility = View.GONE
+            holder.viewLine.visibility = View.VISIBLE
+            holder.cnstMain.visibility = View.VISIBLE
+
+            if (alFollowList.size > (position + 1)) {
+                if (alFollowList[position].postUserId != alFollowList[position + 1].postUserId) {
+                    holder.viewLine.visibility = View.GONE
+                }
+            } else if (alFollowList.size == (position + 1)) {
+                holder.viewLine.visibility = View.GONE
+            } else {
+            }
         }
 
         if (itemList.postDetails.length < 200) {
@@ -184,21 +188,37 @@ class PostListAdapter(
             //holder.viewLine.layoutParams = ViewGroup.LayoutParams(1, 20)
         }
 
-
-
         holder.tvShowReplies.setOnClickListener {
             Toast.makeText(context, "Clicked Show Replies...$position", Toast.LENGTH_SHORT).show()
             if (alFollowList[position].postUserId == alFollowList[position - 1].postUserId) {
                 alFollowList[position].lastViewVisible = false
                 alFollowList[position - 1].lastViewVisible = false
-            }else if (alFollowList[position].postUserId == alFollowList[position + 1].postUserId)
-            {
+            } else if (alFollowList[position].postUserId == alFollowList[position + 1].postUserId) {
                 alFollowList[position].lastViewVisible = false
                 alFollowList[position - 1].lastViewVisible = false
             }
-            notifyDataSetChanged()
-        }
+            alFollowList[position].isClicked = true
 
+
+            for (i in alFollowList.indices) {
+                if (alFollowList[i].postUserId == alFollowList[position].postUserId) {
+                    alFollowList[i].isClicked = true
+                    holder.tvShowReplies.visibility = View.GONE
+                    holder.tvPostDesRPLD.visibility = View.VISIBLE
+                    holder.viewLine.visibility = View.GONE
+                    holder.ivPostMainPicRPLD.visibility = View.GONE
+
+                    Log.e("Show Replies Visible 3", "-----===> ")
+                    holder.cnstMain.visibility = View.VISIBLE
+                    notifyItemChanged(i)
+                }
+            }
+        }
+    }
+
+
+    override fun getItemViewType(position: Int): Int {
+        return position
     }
 
     override fun getItemCount(): Int {
