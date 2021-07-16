@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/FirstEleven.iml" filepath="$PROJECT_DIR$/.idea/FirstEleven.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FirstEleven.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FirstEleven.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cropper/FirstEleven.cropper.iml" filepath="$PROJECT_DIR$/.idea/modules/cropper/FirstEleven.cropper.iml" />
+    </modules>
+  </component>
+</project>
