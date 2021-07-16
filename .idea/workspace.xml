@@ -14,11 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4df2658d-a45b-47d0-8408-2e4811ba3c74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/dotted_bg_vw.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_comment_slct.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_like_slct.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_retweet_slct.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_upload_slct.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_horizontal_dotted_line.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
@@ -30,9 +26,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/brkckr/first/eleven/thread/PostListAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/brkckr/first/eleven/thread/PostListAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/brkckr/first/eleven/thread/ThreadTimeLineActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/brkckr/first/eleven/thread/ThreadTimeLineActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/dotted_bg_vw.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/dotted_bg_vw.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_thread_time_line.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_thread_time_line.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_post_list_data.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/row_post_list_data.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +83,9 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="android.template.-1291339199">
+      <recent name="brkckr.first.eleven.expand" />
+    </key>
     <key name="android.template.1190511549">
       <recent name="brkckr.first.eleven" />
     </key>
@@ -100,9 +100,6 @@
     <key name="android.template.1483769009">
       <recent name="brkckr.first.eleven.thread" />
     </key>
-    <key name="android.template.320286218">
-      <recent name="brkckr.first.eleven" />
-    </key>
     <key name="android.template.1126597982">
       <recent name="brkckr.first.eleven" />
     </key>
@@ -110,6 +107,7 @@
       <recent name="brkckr.first.eleven" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\FlutterWorkSpace\Muzammil\Demos\firstEventDemo\app\src\main\res\drawable" />
       <recent name="D:\FlutterWorkSpace\Muzammil\Demos\FirstEleven\app\src\main\res\drawable" />
       <recent name="D:\FlutterWorkSpace\Muzammil\Demos\FirstEleven\app\src\main\java\brkckr\first\eleven" />
       <recent name="D:\FlutterWorkSpace\Muzammil\Demos\FirstEleven\app\src\main\res" />
@@ -118,8 +116,8 @@
     <key name="android.template.306665306">
       <recent name="brkckr.first.eleven.expand" />
     </key>
-    <key name="android.template.-1291339199">
-      <recent name="brkckr.first.eleven.expand" />
+    <key name="android.template.320286218">
+      <recent name="brkckr.first.eleven" />
     </key>
   </component>
   <component name="RunManager">
@@ -213,10 +211,10 @@
     </state>
     <state x="765" y="216" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1625130695732" />
     <state x="765" y="216" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1626350114333" />
-    <state x="540" y="265" key="AndroidCreateResourceFileDialog" timestamp="1626430790660">
+    <state x="540" y="265" key="AndroidCreateResourceFileDialog" timestamp="1626432974565">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="540" y="265" key="AndroidCreateResourceFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1626430790660" />
+    <state x="540" y="265" key="AndroidCreateResourceFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1626432974565" />
     <state x="758" y="256" key="AndroidProcessChooserDialog" timestamp="1626429125032">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -59,201 +59,204 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp">
 
-                <RelativeLayout
-                    android:id="@+id/rlPostDetailsRPLD"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp">
 
                     <RelativeLayout
-                        android:id="@+id/rlUserDetails"
+                        android:id="@+id/rlPostDetailsRPLD"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp">
+
+                        <RelativeLayout
+                            android:id="@+id/rlUserDetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="25dp">
+
+                            <TextView
+                                android:id="@+id/tvUserNameRPLD"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="Cart"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvSocialIDRPLD"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_toEndOf="@+id/tvUserNameRPLD"
+                                android:text="Cart91"
+                                android:textColor="@color/gray_clr"
+                                android:textSize="10sp" />
+
+                            <ImageView
+                                android:id="@+id/ivRound"
+                                android:layout_width="3dp"
+                                android:layout_height="3dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_toEndOf="@+id/tvSocialIDRPLD" />
+
+                            <TextView
+                                android:id="@+id/tvPostTimeRPLD"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_toEndOf="@+id/ivRound"
+                                android:text="2h Ago"
+                                android:textColor="@color/gray_clr"
+                                android:textSize="10sp" />
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tvPostDesRPLD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rlPostDetailsRPLD"
                         android:layout_centerVertical="true"
-                        android:layout_marginEnd="25dp">
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:maxEms="200"
+                        android:maxLength="200"
+                        android:text="Real Salt LakeLakeLakeLakeLakeLakeLakeLakeLakeLake owner Dell Loy Hansen will sell his soccer teams in the wake of reports that he made racist comments."
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
 
-                        <TextView
-                            android:id="@+id/tvUserNameRPLD"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerVertical="true"
-                            android:text="Cart"
-                            android:textColor="@color/black"
-                            android:textSize="14sp"
-                            android:textStyle="bold" />
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/ivPostMainPicRPLD"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_below="@+id/tvPostDesRPLD"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/profile_dmy"
+                        android:scaleType="fitXY"
+                        android:visibility="gone" />
 
-                        <TextView
-                            android:id="@+id/tvSocialIDRPLD"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerVertical="true"
-                            android:layout_marginStart="5dp"
-                            android:layout_toEndOf="@+id/tvUserNameRPLD"
-                            android:text="Cart91"
-                            android:textColor="@color/gray_clr"
-                            android:textSize="10sp" />
-
-                        <ImageView
-                            android:id="@+id/ivRound"
-                            android:layout_width="3dp"
-                            android:layout_height="3dp"
-                            android:layout_centerVertical="true"
-                            android:layout_marginStart="5dp"
-                            android:layout_toEndOf="@+id/tvSocialIDRPLD" />
-
-                        <TextView
-                            android:id="@+id/tvPostTimeRPLD"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerVertical="true"
-                            android:layout_marginStart="5dp"
-                            android:layout_toEndOf="@+id/ivRound"
-                            android:text="2h Ago"
-                            android:textColor="@color/gray_clr"
-                            android:textSize="10sp" />
-
-                    </RelativeLayout>
-
-
-                </RelativeLayout>
-
-                <TextView
-                    android:id="@+id/tvPostDesRPLD"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/rlPostDetailsRPLD"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="5dp"
-                    android:maxEms="200"
-                    android:maxLength="200"
-                    android:text="Real Salt LakeLakeLakeLakeLakeLakeLakeLakeLakeLake owner Dell Loy Hansen will sell his soccer teams in the wake of reports that he made racist comments."
-                    android:textColor="@color/black"
-                    android:textSize="14sp" />
-
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:id="@+id/ivPostMainPicRPLD"
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    android:layout_below="@+id/tvPostDesRPLD"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/profile_dmy"
-                    android:scaleType="fitXY"
-                    android:visibility="gone" />
-
-                <LinearLayout
-                    android:visibility="gone"
-                    android:id="@+id/llPostLkCmntRPLD"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/tvPostDesRPLD"
-                    android:layout_marginTop="10dp"
-                    android:orientation="horizontal"
-                    android:weightSum="4">
-
-                    <RelativeLayout
-                        android:layout_width="0dp"
+                    <LinearLayout
+                        android:layout_marginBottom="10dp"
+                        android:id="@+id/llPostLkCmntRPLD"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1">
+                        android:layout_below="@+id/tvPostDesRPLD"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="4">
 
-                        <ImageView
-                            android:id="@+id/ivLikeRPLD"
-                            android:layout_width="15dp"
-                            android:layout_height="15dp"
-                            android:layout_centerVertical="true"
-                            android:background="@drawable/ic_like_slct" />
-
-                        <TextView
-                            android:id="@+id/tvLikeRPLD"
-                            android:layout_width="wrap_content"
+                        <RelativeLayout
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_centerVertical="true"
-                            android:layout_marginStart="5dp"
-                            android:layout_toEndOf="@+id/ivLikeRPLD"
-                            android:text="0"
-                            android:textColor="@color/text_hint"
-                            android:textSize="12sp" />
+                            android:layout_weight="1">
 
-                    </RelativeLayout>
+                            <ImageView
+                                android:id="@+id/ivLikeRPLD"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/ic_like_slct" />
 
-                    <RelativeLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1">
+                            <TextView
+                                android:id="@+id/tvLikeRPLD"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_toEndOf="@+id/ivLikeRPLD"
+                                android:text="0"
+                                android:textColor="@color/text_hint"
+                                android:textSize="12sp" />
 
-                        <ImageView
-                            android:id="@+id/ivRetweetRPLD"
-                            android:layout_width="15dp"
-                            android:layout_height="15dp"
-                            android:layout_centerVertical="true"
-                            android:background="@drawable/ic_retweet_slct" />
+                        </RelativeLayout>
 
-                        <TextView
-                            android:id="@+id/tvRetweetRPLD"
-                            android:layout_width="wrap_content"
+                        <RelativeLayout
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_centerVertical="true"
-                            android:layout_marginStart="5dp"
-                            android:layout_toEndOf="@+id/ivRetweetRPLD"
-                            android:text="0"
-                            android:textColor="@color/text_hint"
-                            android:textSize="12sp" />
+                            android:layout_weight="1">
 
-                    </RelativeLayout>
+                            <ImageView
+                                android:id="@+id/ivRetweetRPLD"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/ic_retweet_slct" />
 
-                    <RelativeLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1">
+                            <TextView
+                                android:id="@+id/tvRetweetRPLD"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_toEndOf="@+id/ivRetweetRPLD"
+                                android:text="0"
+                                android:textColor="@color/text_hint"
+                                android:textSize="12sp" />
 
-                        <ImageView
-                            android:id="@+id/ivCommentRPLD"
-                            android:layout_width="15dp"
-                            android:layout_height="15dp"
-                            android:layout_centerVertical="true"
-                            android:background="@drawable/ic_comment_slct" />
+                        </RelativeLayout>
 
-                        <TextView
-                            android:id="@+id/tvCommentRPLD"
-                            android:layout_width="wrap_content"
+                        <RelativeLayout
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_centerVertical="true"
-                            android:layout_marginStart="5dp"
-                            android:layout_toEndOf="@+id/ivCommentRPLD"
-                            android:text="0"
-                            android:textColor="@color/text_hint"
-                            android:textSize="12sp" />
+                            android:layout_weight="1">
 
-                    </RelativeLayout>
+                            <ImageView
+                                android:id="@+id/ivCommentRPLD"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/ic_comment_slct" />
 
-                    <RelativeLayout
-                        android:layout_width="0dp"
+                            <TextView
+                                android:id="@+id/tvCommentRPLD"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_toEndOf="@+id/ivCommentRPLD"
+                                android:text="0"
+                                android:textColor="@color/text_hint"
+                                android:textSize="12sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/ivDownloadRPLD"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/ic_upload_slct" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvShowReplies"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1">
+                        android:layout_below="@+id/llPostLkCmntRPLD"
+                        android:layout_marginTop="10dp"
+                        android:text="Show replies"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="13sp"
+                        android:visibility="gone" />
 
-                        <ImageView
-                            android:id="@+id/ivDownloadRPLD"
-                            android:layout_width="15dp"
-                            android:layout_height="15dp"
-                            android:layout_centerVertical="true"
-                            android:background="@drawable/ic_upload_slct" />
-
-
-                    </RelativeLayout>
-
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/tvShowReplies"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/llPostLkCmntRPLD"
-                    android:layout_marginTop="10dp"
-                    android:text="Show replies"
-                    android:textColor="@color/colorAccent"
-                    android:textSize="13sp"
-                    android:visibility="gone" />
 
             </RelativeLayout>
 

@@ -17,13 +17,21 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import brkckr.first.eleven.R
-import brkckr.first.eleven.expand.ExpandActivity
 import brkckr.first.eleven.expand.ExpandPostActivity
-import java.util.HashMap
+import java.util.*
+import kotlin.collections.ArrayList
+import kotlin.collections.List
+import kotlin.collections.Map
+import kotlin.collections.MutableIterator
+import kotlin.collections.MutableList
+import kotlin.collections.MutableMap
+import kotlin.collections.get
+import kotlin.collections.set
 
 
-class ThreadTimeLineActivity : AppCompatActivity() {
+class ThreadTimeLineActivity : AppCompatActivity(),SwipeRefreshLayout.OnRefreshListener {
 
     lateinit var rcVwThreadATTL: RecyclerView
     lateinit var mContext: Context
@@ -35,6 +43,8 @@ class ThreadTimeLineActivity : AppCompatActivity() {
     var progressCount = 0
     var totalMainCount = 200
 
+    lateinit var swpLytHomeFH: SwipeRefreshLayout
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_thread_time_line)
@@ -44,6 +54,7 @@ class ThreadTimeLineActivity : AppCompatActivity() {
         edtDetails = findViewById<MultiAutoCompleteTextView>(R.id.edtDetails) as MultiAutoCompleteTextView
         progressBr = findViewById<ProgressBar>(R.id.progressBr) as ProgressBar
         tv_counter = findViewById<TextView>(R.id.tv_counter) as TextView
+        swpLytHomeFH = findViewById<SwipeRefreshLayout>(R.id.swpLytHomeFH) as SwipeRefreshLayout
 
         val res: Resources = resources
         val drawable: Drawable = res.getDrawable(R.drawable.circular_progress_bar)
@@ -55,6 +66,25 @@ class ThreadTimeLineActivity : AppCompatActivity() {
         setPostList()
 
         changedListnerData()
+
+        swipeReferenceData()
+    }
+
+    private fun swipeReferenceData() {
+        swpLytHomeFH.setOnRefreshListener(this)
+        swpLytHomeFH.post(Runnable() {
+            fun run() {
+                alPostList = ArrayList()
+                swpLytHomeFH.isRefreshing = true
+                setPostList()
+            }
+        })
+    }
+
+    override fun onRefresh() {
+        alPostList = ArrayList()
+        swpLytHomeFH.isRefreshing = true
+        setPostList()
     }
 
     private fun changedListnerData() {
@@ -255,6 +285,8 @@ class ThreadTimeLineActivity : AppCompatActivity() {
 
     private fun showPostData() {
         try {
+            swpLytHomeFH.isRefreshing = false
+
             var postAdapter = PostListAdapter(mContext, alPostList)
 
             val linearLayoutManager = LinearLayoutManager(mContext)
