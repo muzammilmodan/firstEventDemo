@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cnstMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cnstLytProfileRPLD"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/rlPostDetailsMainVwRPLD"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivProfilePicRPLD"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/profile_dmy"
+                android:scaleType="fitXY"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/viewLine"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/hint_color"
+                android:visibility="invisible"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivProfilePicRPLD" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rlPostDetailsMainVwRPLD"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:id="@+id/rlPostDetailsVwRPLD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/rlPostDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlPostDetailsRPLD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rlUserDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="25dp">
+
+                        <TextView
+                            android:id="@+id/tvUserNameRPLD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Cart"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvSocialIDRPLD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_toEndOf="@+id/tvUserNameRPLD"
+                            android:text="Cart91"
+                            android:textColor="@color/gray_clr"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/ivRound"
+                            android:layout_width="3dp"
+                            android:layout_height="3dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_toEndOf="@+id/tvSocialIDRPLD" />
+
+                        <TextView
+                            android:id="@+id/tvPostTimeRPLD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_toEndOf="@+id/ivRound"
+                            android:text="2h Ago"
+                            android:textColor="@color/gray_clr"
+                            android:textSize="10sp" />
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tvPostDesRPLD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlPostDetailsRPLD"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:maxEms="200"
+                    android:maxLength="200"
+                    android:layout_marginEnd="5dp"
+                    android:text="Real Salt LakeLakeLakeLakeLakeLakeLakeLakeLakeLake owner Dell Loy Hansen will sell his soccer teams in the wake of reports that he made racist comments."
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_below="@+id/tvPostDesRPLD"
+                    android:id="@+id/ivPostMainPicRPLD"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/profile_dmy"
+                    android:scaleType="fitXY"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/rlPostDetailsRPLD"
+                    android:visibility="gone"
+                    android:id="@+id/tvShowReplies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show replies"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/viewLineBottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/cnstMain"
+        android:layout_marginTop="2dp"
+        android:background="@color/view_line" />
+
+
+</RelativeLayout>
